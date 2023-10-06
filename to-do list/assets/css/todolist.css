@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* variáveis */
+:root {
+    --fundo: linear-gradient(45deg, #f5c2c0, #fecdb7);
+    --titulo: #f67770;
+    --lista: #fff6dc9d;
+    --itens: #fffffe;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--fundo);
+    color: var(--itens);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+body h1{
+    color: var(--titulo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.content-add-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#input-new-task,
+#btn-new-task {
+    /* background-color: var(--lista); */
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+}
+
+#input-new-task {
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+#btn-new-task {
+    background-color: var(----fundo);
+    color: var(--itens);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-new-task:hover {
+    background-color: var(--titulo);
+}
+
+#to-do-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+}
+
+#to-do-list li {
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn-ok{
+    border: none;
+    background-color: rgb(73, 242, 127);
+    color: var(--itens);
+    padding: .4rem .8rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-ok:hover{
+    background-color: rgb(36, 163, 77);
+}
