@@ -4,7 +4,7 @@ Código para enviar o livro inteiro de Harry Potter e a Pedra Filosofal para seu
 
 ## Utilização
 
-Abra HPPPedraFilosofal.js
+Abra [HPPPedraFilosofal.js](https://github.com/giuiacr/ProjetosInicianteprogramacao/blob/main/HP%20Pedra%20Filosofal%20Whatsapp%20bot/HPPedraFilosofal.js)
 
 Copie todo o conteúdo 
 
