@@ -1,0 +1,147 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Poppins:wght@400;500;700&family=Righteous&display=swap');
+
+/* Variáveis para as fontes */
+:root {    
+    --poppins: 'Poppins', sans-serif;
+    --righteous: 'Righteous', sans-serif;
+    --confortaa: 'Confortaa', sans-serif;
+}
+
+/* Estilo geral */
+* {
+    margin: 0;
+    /*margem é a distância da tag usada pra exterior*/
+    padding: 0;
+    /*padding é a distância da tag usada pro seu conteúdo*/
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Estilo do body */
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #183D3D 16.62%, #005B41 85.61%);
+}
+
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.logo {
+    font-family: var(--righteous);
+    font-size: 40px;
+    color: rgb(137, 127, 127);
+}
+
+.cabecalho-menu {
+    font-family: var(--poppins);
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    color: rgb(137, 127, 127);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Conteúdo */
+.conteudo {
+    border-top: 0.4px solid rgb(137, 127, 127);
+    margin-bottom: 48px;
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-titulo {
+    font-family: var(--righteous);
+    font-size: 64px;
+    font-weight: 400;
+    color: rgb(137, 127, 127);
+}
+
+.conteudo-principal-paragrafo {
+    font-family: var(--poppins);
+    font-size: 24px;
+    color: rgb(204, 190, 190);
+}
+
+.conteudo-principal-botao {
+    font-family: var(--poppins);
+    color: rgb(204, 190, 190);
+    background: rgb(19, 105, 80);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 180px;
+    height: 60px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.conteudo-principal-botao:hover {
+    background-color: #102e2e;
+}
+
+.conteudo-principal-imagem {
+    height: 430px;
+}
+
+/* Conteúdo secundário */
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid rgb(137, 127, 127);
+    font-family: var(--righteous);
+    color: rgb(137, 127, 127);
+    font-size: 30px;
+    padding-top: 48px;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: var(--poppins);
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(204, 190, 190);
+
+}
+
+/* Rodapé */
+.rodape {
+    border-top: 0.6px solid rgb(137, 127, 127);
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: var(--confortaa);
+    color: rgb(137, 127, 127);
+    padding: 10px;
+    padding-left: 837px;
+}
