@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" type="text/css" href="parallax.css">
+</head>
+<body>
+<header>
+    <a href="#" class="logo">Logo</a>
+    <ul>
+    <li><a href="#">Início</a></li>
+    <li><a href="#sec">Sobre o projeto</a></li>
+    <li><a href="#sec2">Meu trabalho</a></li>
+    <li><a href="#sec3">Sobre mim</a></li>
+    <li><a href="#sec4">Contatos</a></li>
+    </ul>
+</header>
+<section>
+    <img src="stars.png" id="stars">
+    <img src="moon.png" id="moon">
+    <img src="mountains_behind.png" id="mountains_behind">
+    <h2 id="text">Projeto Parallax da Giullia</h2>
+    <a href="https://moonphases.co.uk/" target="_blank" id="btn">Explore</a>
+    <img src="mountains_front.png" id="mountains_front">
+</section>
+<div class="sec" id="sec">
+    <h2>Sobre o projeto</h2>
+    <p>
+        É um site que se movimenta utilizando recursos de javascript, imagens recortadas específicas
+        e css (utilizo principalmnte z-index). Fiz esse projeto como um exemplo do que consigo fazer
+        em questão de design e front-end com recursos simples e criatividade.
+        <br>
+        <br>
+        obs: feito com conhecimentos adquiridos na Alura.
+    </p>
+</div>
+
+<div class="sec2" id="sec2">
+    <h2>Meu trabalho</h2>
+    <p>Trabalhei bastante com desenvolvimento de telas funcionais para um sistema de pós-vendas utilizado
+        pelos clientes da empresa para atendimento pós-venda de seus produtos e acionamento de garantia.
+        <br>
+        Também criei telas para o novo app que será utilizado pelos técnicos dos postos autorizados dos clientes
+        para atender e realizar conserto de produtos, como telas de inventário e pedido de peças,
+        orçamento, login do técnico, rotinas que geram documentos excel com os produtos, peças ou guias de conserto
+        tela de ativação e desativação de postos avançados e funcionários (técnicos dos postos), além de muitos
+        ajustes no front em geral.
+        <br>
+        Utilizei principalmente PHP, HTML, Javascript e o banco de dados (Postgresql).
+    </p>
+</div>
+<div class="sec3" id="sec3">
+    <h2>Sobre mim</h2>
+    <p>Programadora full-stack, com preferência por front-end. Sou comunicativa, detalhista, aprendo rápido e tenho
+       muita vontade de trabalhar. Possuo conhecimentos em <strong>PHP, Javascript, HTML5, 
+       CSS3, Postgresql e Bootstrap</strong>.
+       <br>
+       Idiomas: inglês fluente e espanhol intermediário.
+       <br>
+       Além disso, sou <strong>bacharel em direito</strong> e estou terminando <strong>superior tecnico em análise e 
+       desenvolvimento de sistemas</strong>
+    </em></p>
+
+</div>
+<div class="sec4" id="sec4">
+    <h2>Contatos</h2>
+    <p>Minhas redes pelas quais você pode entrar em contato!</p>
+    <a href="https://www.instagram.com/giuiacr/" target="_blank" id="btn"><button></button>instagram</a>
+    &nbsp;
+    <a href="https://www.linkedin.com/in/giullia-cordeiro-rebua/" target="_blank" id="btn"><button></button>linkedin</a>
+    &nbsp;
+    <a href="#" id="btn"><button></button>portfolio</a>
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let text = document.getElementById('text');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        mountains_behind.style.top = value * 0.5 + 'px';
+        mountains_front.style.top = value * 0 + 'px';
+        text.style.marginRight = value * 2 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px';
+        header.style.top = value * 1 + 'px';
+    })
+
+    window.addEventListener('load', function () {
+        window.scrollTo(0, 0);
+    });
+    
+</script>
+</body>
+<footer><a class="footer_name">Giullia Cordeiro</a></footer>
+</html>
